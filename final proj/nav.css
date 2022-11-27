@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #344a72;
+    --secondary-color: chocolate;
+}
+
+.nav-pos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-color: #009900;
+}
+
+#navbar ul {
+    list-style: none;
+    z-index: 100;
+}
+
+#navbar ul li {
+    color: #333;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+}
+
+#navbar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* Hide Nested ul By Default */
+
+#navbar ul li ul {
+    display: none;
+}
+
+#navbar ul li:hover {
+    color: #fff;
+}
+
+#navbar ul li:hover a {
+    color: #fff;
+}
+
+#navbar ul li a:active {
+    color: red;
+    font-weight: bolder;
+}
+
+
+/* Nested Dropdown Show */
+
+#navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+    display: block;
+    background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+    color: #333;
+}
+
+#navbar ul li:hover ul li:hover {
+    background: #e0e0e0;
+    color: inherit;
+}
+
+#navbar ul li:hover ul li span {
+    float: right;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+    background: var(--secondary-color);
+}
+
+
+/**Make it fully responsive using CSS media queries.**/
+
+@media (max-width: 600px) {
+    #navbar ul li {
+        display: block;
+    }
+    #navbar ul li:hover ul {
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+/* Navigation buttons styling*/
+
+nav button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+nav button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+nav button:active,
+nav button:focus,
+nav button:target,
+nav button.selected {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+    color: red;
+    font-weight: bolder;
+}
+
+.fa_custom {
+    color: #0099CC;
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}

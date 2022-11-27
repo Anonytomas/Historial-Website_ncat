@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--To enable us avoid the instance where we have to go to each page to edit sections like the nav element in case we add new pages,
+    or go to each page to include a css or js file in the head whenever we have to add a new file,
+    we will isolate such portions into a different html file and include in the appropriate sections. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/myjsfunctions.js"></script>
+    <title>Homepage - History forgotten is repeated</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <!--we used a javascript to create an html include via w3-include-html and the function called at the bottom of page. -->
+            <!--add a Hero Image for the indexpage and another for all other pages-->
+            <div w3-include-html="includes/indexhero.html"></div>
+            <!-- In this section, we are embedding the nav element using a javascript function. -->
+        </header>
+        <div w3-include-html="includes/navigation.html"></div>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main class="contentbox">
+            <div class="aside-r">
+                <img src="../images/lincoln1.jpg" alt="Lincoln was the first president in American history to be killed." width="100%" height="auto">
+                <caption>Lincoln was the first president in American history to be killed.</caption>
+            </div>
+
+            <!--here is the section for the main content of each page-->
+            <p>Actor John Wilkes Booth killed President Abraham Lincoln on April 14, 1865, shortly after entering the presidential box at Ford's Theatre in Washington, D.C. Booth jumped onto the stage and fled out the back door as Lincoln sagged forward
+                in his chair. A medical professional in the crowd hastened to inspect the president who is paralyzed. After being brought across the street to Petersen's Boarding House, Lincoln passed away there the following morning.</p>
+            <p>
+                Lincoln was the first president in American history to be killed. Booth's motivation for doing it is unknown. He believed it would benefit the South, which had recently given up to Federal forces. Lincoln's aspirations for a rather generous peace were
+                effectively thwarted, having the exact opposite effect. It was not Booth acting alone. With a reward for information leading to the arrest of Booth and his cronies, this "wanted" poster circulated widely. Booth was shot while attempting
+                to flee from Union soldiers after the conspirators had all been apprehended.</p>
+            <p>
+                President Lincoln's passing was lamented by the entire nation. People flocked to train stops all along the route to offer their respects as the nine-car funeral train brought President Lincoln home to be buried in Springfield, Illinois.
+            </p>
+            <p>
+                Works Cited The Library of Congress. (2000, April 24). The Assassination of President Lincoln April 14, 1865. The Assassination of President Lincoln. Retrieved November 25, 2022, from https://www.americaslibrary.gov/jb/civil/jb_civil_lincoln_3.html
+            </p>
+        </main>
+
+        <footer>
+            <!--for desktops, we will place our grid layout here to serve a video lead & a credible social media lead.
+            for the mobile and small screen devices, we will use the flexbox instead of the grid-->
+            <div class="gridflexcontainer">
+                <div class="gfc-col1">
+                    <h2>Video Lead</h2>
+                    <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Nx2-WVsgjHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center>
+                </div>
+                <div class="gfc-col2">
+                    <h2>Social media Lead</h2>
+                    <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">President Abraham Lincoln was shot at Ford’s Theatre in Washington, D.C. on <a href="https://twitter.com/hashtag/ThisDayInHistory?src=hash&amp;ref_src=twsrc%5Etfw">#ThisDayInHistory</a> in 1865. The assassin, John Wilkes Booth,
+                            shouted, “Sic semper tyrannis! The South is avenged,” as he jumped onto the stage and fled on horseback. Lincoln died the next day.</p>&mdash; HISTORY (@HISTORY) <a href="https://twitter.com/HISTORY/status/1382317721703055360?ref_src=twsrc%5Etfw">April 14, 2021</a></blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+            <div w3-include-html="includes/footermenu.html"></div>
+        </footer>
+
+        <!--call javascripts to load at the end of the page to avoid the scripts jamming page rendering speed-->
+        <script>
+            includeHTML();
+        </script>
+        <div w3-include-html="includes/body-bottom-for-scripts.html"></div>
+        <!--wrapper div ends-->
+    </div>
+</body>
+
+</html>
