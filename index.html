@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--To enable us avoid the instance where we have to go to each page to edit sections like the nav element in case we add new pages,
+    or go to each page to include a css or js file in the head whenever we have to add a new file,
+    we will isolate such portions into a different html file and include in the appropriate sections. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <script src="js/myjsfunctions.js"></script>
+    <title>Homepage - History forgotten is repeated</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <!--we used a javascript to create an html include via w3-include-html and the function called at the bottom of page. -->
+            <!--add a Hero Image for the indexpage and another for all other pages-->
+            <div w3-include-html="includes/indexhero.html"></div>
+            <!-- In this section, we are embedding the nav element using a javascript function. -->
+        </header>
+        <div w3-include-html="includes/navigation.html"></div>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main class="contentbox">
+            <!--<div class="aside-r">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </div> -->
+
+            <!--here is the section for the main content of each page-->
+            <p>
+                Welcome to Historic Places, a website built to cover important historical events from the past that define our world today. Our goal is to gather, curate, and provide quality and scholarly sourced information and publish it in a condensed format. Our
+                website is built to be scalable and accessible to both readers and editors so we can provide a platform for those who are interested in history.
+            </p>
+            <p>
+                History is a powerful tool that we can use to learn from our mistakes, imagine new ideas, and create a better world for everyone. That’s why at Historic Places we promote an objective historical perspective that is not directly influenced by any organization—political
+                or religious. History is happening every day, to understand the events, struggles, and triumphs of today, it is increasingly important to study history.
+            </p>
+            <p>
+                In addition to articles regarding historic topics, we also include links to relevant videos and social media posts that allow our visitors to interact with others who are interested in a particular historical topic. Because we understand that people learn
+                and interact with historical content in different ways, we have incorporated elements such as tables into our website for a more analytical view of the data that historical events produce.
+            </p>
+            <p>
+                <div class="tooltip">Our first historical events cover three of the four presidential assassinations in the United States.
+                    <span class="tooltiptext">Abraham Lincoln, James Garfield, John F. Kennedy</span>
+                </div>&nbsp;However, we have included a short table that shows who was shot, the shooter, the date of the shooting, and the date of the president's death. An interesting note to add is that all four assassinations were carried out with a gun.
+            </p>
+
+        </main>
+
+        <footer>
+            <div w3-include-html="includes/footermenu.html"></div>
+        </footer>
+
+        <!--call javascripts to load at the end of the page to avoid the scripts jamming page rendering speed-->
+        <script>
+            includeHTML();
+        </script>
+        <div w3-include-html="includes/body-bottom-for-scripts.html"></div>
+        <!--wrapper div ends-->
+    </div>
+</body>
+
+</html>

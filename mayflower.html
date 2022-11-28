@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--To enable us avoid the instance where we have to go to each page to edit sections like the nav element in case we add new pages,
+    or go to each page to include a css or js file in the head whenever we have to add a new file,
+    we will isolate such portions into a different html file and include in the appropriate sections. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <script src="js/myjsfunctions.js"></script>
+    <title>Mayflower</title>
+</head>
+
+<body>
+    <div id="wrapper">
+    <!--<h1>Mayflower</h1>-->
+        <header>
+            <!--we used a javascript to create an html include via w3-include-html and the function called at the bottom of page. -->
+            <!--add a Hero Image for the indexpage and another for all other pages-->
+            <div w3-include-html="includes/indexhero.html"></div>
+            <!-- In this section, we are embedding the nav element using a javascript function. -->
+        </header>
+        <div w3-include-html="includes/navigation.html"></div>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main class="contentbox">
+            <div class="aside-r">
+                <img src="../images/mayflower.jpg" alt="On December 18, 1620, the English ship Mayflower docks at modern-day Plymouth, Massachusetts" width="100%" height="auto">
+                <figcaption>Mayflower docks at modern-day Plymouth, Massachusetts</figcaption>
+            </div>
+
+            <!--here is the section for the main content of each page-->
+            <h1>Mayflower</h1>
+            <p>On December 18, 1620, the English ship Mayflower docks at modern-day Plymouth, Massachusetts, and its passengers prepare to begin their new settlement, Plymouth Colony.</p>
+
+            <p>The famous Mayflower story began in 1606, when a group of reform-minded Puritans in Nottinghamshire, England, founded their own church, separate from the state-sanctioned Church of England. Accused of treason, they were forced to leave the
+                country and settle in the more tolerant Netherlands. After 12 years of struggling to adapt and make a decent living, the group sought financial backing from some London merchants to set up a colony in America. On September 6, 1620, 102
+                passengers–dubbed Pilgrims by William Bradford, a passenger who would become the first governor of Plymouth Colony—crowded on the Mayflower to begin the long, hard journey to a new life in the New World.</p>
+            <p>On November 11, 1620, the Mayflower anchored at what is now Provincetown Harbor, Cape Cod. Before going ashore, 41 male passengers—heads of families, single men and three male servants—signed the famous Mayflower Compact, agreeing to submit
+                to a government chosen by common consent and to obey all laws made for the good of the colony. Over the next month, several small scouting groups were sent ashore to collect firewood and scout out a good place to build a settlement. Around
+                December 10, one of these groups found a harbor they liked to the west of Cape Cod Bay. They returned to the Mayflower to tell the other passengers, but bad weather prevented them from landing until December 18. </p>
+            <p>After exploring the region, the settlers took over a cleared area previously occupied by members of a local Native American tribe, the Wampanoag. The tribe had abandoned the village several years earlier, after an outbreak of European disease.
+                That winter of 1620-1621 was brutal, as the Pilgrims struggled to build their settlement, find food and ward off sickness. By spring, 50 of the original 102 Mayflower passengers were dead. The remaining settlers made contact with returning
+                members of the Wampanoag tribe and in March they signed a peace treaty with a tribal chief, Massasoit. Aided by the Wampanoag, especially the English-speaking Squanto, the Pilgrims were able to plant crops—especially corn and beans—that
+                were vital to their survival. The Mayflower and its crew left Plymouth to return to England on April 5, 1621. Over the next several decades, more and more settlers made the trek across the Atlantic to Plymouth, which gradually grew into
+                a prosperous shipbuilding and fishing center. In 1691, Plymouth was incorporated into the new Massachusetts Bay Association, ending its history as an independent colony.</p>
+
+        </main>
+
+        <footer>
+            <!--for desktops, we will place our grid layout here to serve a video lead & a credible social media lead.
+            for the mobile and small screen devices, we will use the flexbox instead of the grid-->
+            <div class="gridflexcontainer">
+                <div class="gfc-col1">
+                    <h2>Video Lead</h2>
+                    <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PaPUguE5vLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center>
+                </div>
+                <div class="gfc-col2">
+                    <h2>Social media Lead</h2>
+                    <blockquote class="twitter-tweet">
+                        <blockquote class="twitter-tweet">
+                            <p lang="en" dir="ltr">2/ Let’s start with the Pilgrims and the Mayflower Compact <br><br>The pilgrims left Europe to escape religious persecution <br><br>Upon boarding the Mayflower they signed a pact saying all are equal &amp; key decisions will
+                                be decided by majority<a href="https://t.co/YrjKyLJpGv">https://t.co/YrjKyLJpGv</a> <a href="https://t.co/jXBhNrjgQx">pic.twitter.com/jXBhNrjgQx</a></p>&mdash; BowTiedBiotech 🧪🔬🧬 | Bi-Weekly Biotech Substack (@BowTiedBiotech)
+                            <a href="https://twitter.com/BowTiedBiotech/status/1596150283331305472?ref_src=twsrc%5Etfw">November 25, 2022</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+            <div w3-include-html="includes/footermenu.html"></div>
+        </footer>
+
+        <!--call javascripts to load at the end of the page to avoid the scripts jamming page rendering speed-->
+        <script>
+            includeHTML();
+        </script>
+        <div w3-include-html="includes/body-bottom-for-scripts.html"></div>
+        <!--wrapper div ends-->
+    </div>
+</body>
+
+</html>
