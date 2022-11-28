@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--To enable us avoid the instance where we have to go to each page to edit sections like the nav element in case we add new pages,
+    or go to each page to include a css or js file in the head whenever we have to add a new file,
+    we will isolate such portions into a different html file and include in the appropriate sections. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <script src="js/myjsfunctions.js"></script>
+    <title>James A. Garfield</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <!--we used a javascript to create an html include via w3-include-html and the function called at the bottom of page. -->
+            <!--add a Hero Image for the indexpage and another for all other pages-->
+            <div w3-include-html="includes/indexhero.html"></div>
+            <!-- In this section, we are embedding the nav element using a javascript function. -->
+        </header>
+        <div w3-include-html="includes/navigation.html"></div>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main class="contentbox">
+            <div class="aside-r">
+                <!--<img src="images/garfield1.jpg" alt="Lincoln was the first president in American history to be killed." width="100%" height="auto">
+                <caption>James A. Garfield's murder receives the least attention.</caption>-->
+                <figure>
+                    <img src="images/garfield1.jpg" width="100%" height="auto"
+                         alt="James A. Garfield">
+                    <figcaption>James A. Garfield's murder receives the least attention.</figcaption>
+                </figure>
+            </div>
+
+            <!--here is the section for the main content of each page-->
+            <h1>James A. Garfield</h1>
+            In contrast to past presidential assassinations, James A. Garfield's murder receives the least attention. On July 2, 1881, Garfield had only been in office for four months when Charles Guiteau fatally shot him in broad daylight.</p>
+            <p>
+                Garfield was departing from the Baltimore and Potomac Railroad Station in Washington, D.C., for his summer vacation with his sons in Massachusetts. The Secret Service and other security measures were not as advanced for early presidents, making them easy
+                targets when out in public. The president's travel plans were known to the public, so Guiteau just waited for Garfield to arrive in the station lobby before bursting out of the shadows and shooting him in the head. Garfield was struck
+                in the arm and the back by one of Guiteau's two rounds. But neither shot proved lethal. No essential organs were harmed by the bullets. </p>
+            <p>
+                Many people gathered around Garfield to treat his wounds in an effort to aid the hurt president. Several men poked and prodded at Garfield's open wounds with unclean hands, trying to pry the bullet from his body. When compared to today, precautions about
+                illnesses and germs were not fully recognized. Many doctors tried unsuccessfully for days after the shooting to find and remove the bullets from Garfield's body.</p>
+            <p>
+                Unfortunately, Garfield contracted an infection and got very sick as a result of all the exposure to germs. He continued to be bedridden as his heart weakened and he started to lose weight. President Garfield passed away on September 19, 1881, 79 days
+                after the shooting, from a ruptured splenic artery aneurysm brought on by sepsis and pneumonia. If he had received competent care, it is thought that Garfield would have likely survived his injuries. Garfield’s final resting place was
+                built as a memorial of his life, located in Lake View Cemetery in his hometown Cleveland, Ohio.</p>
+            <p>
+                Garfield is the only president who was assassinated without a marker at the crime scene. But luckily, the National Mall and Memorial Parks are still open for visits today. They are situated right in the heart of Washington, D.C.; for additional details 
+                and information on the landmark, please go to https://www.nps.gov/nationalmallplan/Visit.html.</p>
+            <p>
+                Works Cited President James A. Garfield assassination. Crime Museum. (2021, August 17). Retrieved November 25, 2022, from https://www.crimemuseum.org/crime-library/assassinations/president-james-garfield/
+            </p>
+
+        </main>
+
+        <footer>
+            <!--for desktops, we will place our grid layout here to serve a video lead & a credible social media lead.
+            for the mobile and small screen devices, we will use the flexbox instead of the grid-->
+            <div class="gridflexcontainer">
+                <div class="gfc-col1">
+                    <h2>Video Lead</h2>
+                    <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0u4zOjtM4OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center>
+                </div>
+                <div class="gfc-col2">
+                    <h2>Social media Lead</h2>
+                    <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">James A. Garfield 🇺🇸 died <a href="https://twitter.com/hashtag/OTD?src=hash&amp;ref_src=twsrc%5Etfw">#OTD</a> 1881. Although shot by Charles Guiteau in July, he likely died from infections due to medical ignorance.<br><br>&quot;Assassination
+                            can no more be guarded against than death by lightning; and it is not best to worry about either.”<br>- James Garfield<a href="https://twitter.com/hashtag/POTUS?src=hash&amp;ref_src=twsrc%5Etfw">#POTUS</a> ❤ <a href="https://t.co/EC98NrfNoc">pic.twitter.com/EC98NrfNoc</a></p>&mdash;
+                        Presidential Wisdom (@PrezWisdom) <a href="https://twitter.com/PrezWisdom/status/1571817910494011392?ref_src=twsrc%5Etfw">September 19, 2022</a></blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+            <div w3-include-html="includes/footermenu.html"></div>
+        </footer>
+
+        <!--call javascripts to load at the end of the page to avoid the scripts jamming page rendering speed-->
+        <script>
+            includeHTML();
+        </script>
+        <div w3-include-html="includes/body-bottom-for-scripts.html"></div>
+        <!--wrapper div ends-->
+    </div>
+</body>
+
+</html>

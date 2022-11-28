@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--To enable us avoid the instance where we have to go to each page to edit sections like the nav element in case we add new pages,
+    or go to each page to include a css or js file in the head whenever we have to add a new file,
+    we will isolate such portions into a different html file and include in the appropriate sections. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <script src="js/myjsfunctions.js"></script>
+    <title>Kennedy's Assassination</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <!--we used a javascript to create an html include via w3-include-html and the function called at the bottom of page. -->
+            <!--add a Hero Image for the indexpage and another for all other pages-->
+            <div w3-include-html="includes/indexhero.html"></div>
+            <!-- In this section, we are embedding the nav element using a javascript function. -->
+        </header>
+        <div w3-include-html="includes/navigation.html"></div>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main class="contentbox">
+            <div class="aside-r">
+                <!--<img src="../images/kennedy2.jpg" alt="Lincoln was the first president in American history to be killed." width="100%" height="auto">
+                <caption>James A. Garfield's murder receives the least attention.</caption>-->
+                <figure>
+                    <img src="images/kennedy2.jpg" width="100%" height="auto"
+                         alt="John F. Kennedy">
+                    <figcaption>John F. Kennedy before his Asssassination</figcaption>
+                </figure>
+            </div>
+
+            <!--here is the section for the main content of each page-->
+            <h1>John F. Kennedy</h1>
+            On November 22, 1963, in Dallas, Texas, a car struck and killed John F. Kennedy, the 35th president of the United States. Out of the 4 presidential assassinations, this one was the most gruesome and well-known of them. Lee Harvey Oswald, a former U.S.
+            Marine who had embraced Marxism and briefly defected to the Soviet Union, is the man who is suspected of killing him. Oswald was shot and killed by Jack Ruby, a devastated Dallas nightclub owner, as he was being transported after being brought
+            into jail, therefore he was never put on trial for murder. Despite the Warren Commission's findings to the contrary, which was set up by Kennedy's successor, U.S. President Lyndon B. Johnson, to investigate the assassination, many Americans
+            believed the popular young president's death was the product of a conspiracy rather than a single person. The occurrence continued to be the focus of much controversy.</p>
+            <p>
+                On November 21, 1963, President Kennedy traveled to Texas for a two-day, five-city fund-raising excursion with his wife, Jacqueline Kennedy, and Vice President Johnson. The trip was probably also designed to try and unite a divided Democratic Party in
+                a state that was crucial to Kennedy's hopes of winning reelection in 1964. The president was warmly welcomed at his first two stops, San Antonio and Houston, as well as at Fort Worth, where the presidential party spent the night of November
+                21. This is despite the fact that Adlai Stevenson, the U.S. ambassador to the UN and a liberal icon, had been confronted by flustered protesters a month earlier during a visit to Dallas—a city with a right-leaning press and the epicenter
+                of much anti-Kennedy feeling.</p>
+            <p>
+                Kennedy and his group took a quick flight to Dallas Love Field airport the following morning after giving a speech in a parking lot in front of the hotel where he had stayed and then speaking once more at a Fort Worth Chamber of Commerce breakfast. Before
+                boarding the backseat of a modified open convertible at the airport to accompany Democratic Texas Governor John Connally and his wife (who sat in jump seats in front of the Kennedys) to the president's next stop, the Trade Mart, where
+                Kennedy was scheduled to give another speech, the president and first lady shook hands with members of a hospitable crowd. On the roughly 10-mile (16-km) road to the Trade Mart, there were 200,000 people expected to be lined up.</p>
+            <p>
+                The president's convertible passed the tall Texas School Book Depository building as the procession swung southwest on Elm Street and entered Dealey Plaza on the outskirts of downtown Dallas. Shots were fired a short while later, about 12:30 PM. According
+                to the Warren Report, a bullet likely entered the president's neck at the base and went through his throat before passing through Governor Connally's shoulder and wrist and striking him in the thigh. Kennedy was wounded by a second bullet
+                to the back of the head. The motorcade swiftly arrived at the neighboring Parkland Memorial Hospital, but the doctors' attempts proved fruitless. Kennedy was pronounced dead in a formal manner around 1:00 PM. Connally made it through his
+                injuries.</p>
+            <p>
+                Even today, you can go to the area where the assassination took place. The Museum, which is housed inside the former Texas School Book Depository structure, provides a history of President John F. Kennedy's life, assassination, and legacy. Wednesday through
+                Sunday from 10 am to 5 pm, you can visit this historical site. Please check https://www.jfk.org/plan-your-visit/ for further details.</p>    
+            <p>
+                Works Cited Encyclopædia Britannica, inc. (n.d.). Kennedy's funeral. Encyclopædia Britannica. Retrieved November 25, 2022, from https://www.britannica.com/event/assassination-of-John-F-Kennedy/Kennedys-funeral
+            </p>
+
+        </main>
+
+        <footer>
+            <!--for desktops, we will place our grid layout here to serve a video lead & a credible social media lead.
+            for the mobile and small screen devices, we will use the flexbox instead of the grid-->
+            <div class="gridflexcontainer">
+                <div class="gfc-col1">
+                    <h2>Video Lead</h2>
+                    <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEVfKKjODBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center>
+                </div>
+                <div class="gfc-col2">
+                    <h2>Social media Lead</h2>
+                    <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">The United States solemnly observes the 9th anniversary of the assassination of President John F. Kennedy.<br><br>This is the footage. Warning: it’s graphic. <a href="https://t.co/FS4YReyKFM">pic.twitter.com/FS4YReyKFM</a></p>&mdash;
+                        1972 Live (@50YearsAgoLive) <a href="https://twitter.com/50YearsAgoLive/status/1595076633643593730?ref_src=twsrc%5Etfw">November 22, 2022</a></blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+            <div w3-include-html="includes/footermenu.html"></div>
+        </footer>
+
+        <!--call javascripts to load at the end of the page to avoid the scripts jamming page rendering speed-->
+        <script>
+            includeHTML();
+        </script>
+        <div w3-include-html="includes/body-bottom-for-scripts.html"></div>
+        <!--wrapper div ends-->
+    </div>
+</body>
+
+</html>
